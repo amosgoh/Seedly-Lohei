@@ -81,8 +81,6 @@ function shakeEventDidOccur () {
     return false;
   }
 
-  window.removeEventListener('shake', shakeEventDidOccur, false);
-
 }
 
 

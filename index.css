@@ -276,6 +276,8 @@
 .qrCode {
   display: inline-block;
   margin-top: 5%;
+  width: 20%;
+  height: auto;
 }
 
 

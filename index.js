@@ -80,6 +80,9 @@ function shakeEventDidOccur () {
     }, 2900);
     return false;
   }
+
+  window.removeEventListener('shake', shakeEventDidOccur, false);
+
 }
 
 

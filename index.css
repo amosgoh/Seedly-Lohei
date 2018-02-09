@@ -1,0 +1,345 @@
+body {
+  background-image: 'Final-BG.png';
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  font-family: 'Avenir', 'Helvetica', 'Arial','Sans-Serif';
+  text-align: center;
+    }
+    
+#tap-text {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+    }
+
+.invisible {
+  display: none;
+}
+
+.back-button {
+  z-index: 1001;
+  position: absolute;
+  width: 8%;
+  height: auto;
+  top: 8%;
+  left: 7%;
+}
+    
+.tap {
+  margin-top: 120%;
+  margin-left: 30%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(193,35,35,1);
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(193,35,35, 0.5);
+  animation: pulse 2s infinite;
+  z-index: 10000;
+  position: absolute;
+  display:flex;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(193,35,35, 0.2);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 5px rgba(193,35,35, 0.2);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(193,35,35, 0.2);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(193,35,35, 0.2);
+    box-shadow: 0 0 0 0 rgba(193,35,35, 0.2);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 5px rgba(193,35,35, 0.2);
+      box-shadow: 0 0 0 5px rgba(193,35,35, 0.2);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(193,35,35, 0.2);
+      box-shadow: 0 0 0 0 rgba(193,35,35, 0.2);
+  }
+}
+
+.tap-inner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(193,35,35,1);
+  cursor: pointer;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 2s infinite;
+	Z-index: 10001;
+  display:flex;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
+.big-image {
+  min-width: 100%;
+  max-height: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+}
+
+#slide0 {
+  z-index: 1003;
+}
+
+#slide1 {
+  z-index: 1000;
+}
+
+#slide2 {
+  z-index: 999;
+}
+
+#slide3 {
+  z-index: 998;
+}
+
+#slide4 {
+  z-index: 997;
+}
+
+#slide5 {
+  z-index: 996;
+}
+
+#slide6 {
+  z-index: 995;
+}
+
+#slide7 {
+  z-index: 994;
+}
+
+#slide8 {
+  z-index: 993;
+}
+
+#slide9 {
+  z-index: 992;
+}
+
+#slide10 {
+  z-index: 991;
+}
+
+
+
+.shake-icon {
+  z-index: 990;
+  display: block;
+  width: 20% !important;
+  height: auto;
+  position: fixed;
+  bottom: 5%;
+  margin-left: 36%;
+  margin-right: 40%;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#slide11 {
+  z-index: 989;
+  position: fixed;
+}
+
+#toss-gif.hide-opacity{
+    opacity: 0;
+}
+#toss-gif {
+  z-index: 901;
+  position: fixed; 
+}
+         
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  
+}
+         
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  
+}
+         
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+
+#slide-end {
+  z-index: 900;
+}
+
+
+
+.endScreen {
+  text-align: center;
+  color: #f1c452;
+  font-family: "Avenir";
+  
+}
+
+.seedlyLogo {
+  margin-bottom: 0%;
+  margin-top: 10% !important;
+}
+
+.greetings {
+  display: inline-block;
+}
+
+.wishes {
+  font-size: 1.2em;
+  margin-bottom: 2%;
+  margin-top: -6%;
+}
+
+.fourD {
+  display: inline-block;
+  margin-top: 5%;
+  font-size: 1.2em;
+}
+
+#luckyNumber {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.seedly-plug {
+  font-size: 0.8em;
+  color: #f1c452;
+  margin: 50% 20% 0 20%;
+  
+}
+.nonMobileMode, .mobileLandscapeMode {
+  display: none; 
+  color:#F1C453;
+}
+
+.warningText {
+  margin: 0% 5% 0% 5%;
+  font-size: 1.3em;
+  display: inline-block;
+
+}
+
+.rotatePhone {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.qrCode {
+  display: inline-block;
+  margin-top: 5%;
+  width: 25%;
+  height: auto;
+}
+
+
+
+@media only screen and (max-width: 499px) {
+  
+  .tap, .shake-icon, .back-button {
+    display: block;
+  }
+
+    .nonMobileMode {
+      display: none;
+      
+    }
+    
+    .mobileLandscapeMode {
+      display: none;
+    }
+}
+
+@media only screen and (min-width: 500px)  and (max-width:800px){
+    .big-image, .shake-icon, .back-button, .toss-gif{
+        display:none !important; 
+    }
+    
+    
+    .mobileMode {
+      display: none;
+    }
+    
+    .nonMobileMode {
+      display: none;
+      
+    }
+    
+    .mobileLandscapeMode {
+      display: block;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+  
+    body {
+      background-image: url("https://blog.seedly.sg/wp-content/uploads/2018/02/desktop-bg.png");
+      background-size: 100%;
+      
+    }
+    .big-image, .shake-icon, .back-button,.toss-gif {
+        display:none !important; 
+    }
+    
+    .mobileMode {
+      display: none;
+    }
+    
+    .nonMobileMode {
+      display: block;
+    }
+    
+    .mobileLandscapeMode {
+      display: none;
+    }
+    
+}

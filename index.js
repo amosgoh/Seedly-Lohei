@@ -68,7 +68,8 @@ function shakeEventDidOccur () {
   document.getElementById("slide11").style.display ='none';
   document.getElementById("toss-gif").style.display = 'inline';
   var audio = document.getElementById('audio-end');
-  audioo.play
+  audio.play
+
   setTimeout(function(){
   document.getElementById("toss-gif").style.display = 'none';},3000);
   }

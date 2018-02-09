@@ -1,5 +1,5 @@
 let currentSlide = 0;
-console.log(currentSlide);
+
 
 function showFirst(id, btn,audio,secondAudio) {
   document.getElementById(id).style.display = 'none';
@@ -52,8 +52,12 @@ function showPrevious() {
 var audio = document.getElementById("audio0");
  audio.volume = 0.2;
 
-function showShake(id, btn) {
+function showShake(id, btn, audio) {
   document.getElementById(id).style.display = 'none'
+  var audio = document.getElementById(audio);
+  audio.play();
+  
+  window.addEventListener('shake', shakeEventDidOccur, false);
 
   var myShakeEvent = new Shake({
     threshold: 8, // optional shake strength threshold
@@ -61,19 +65,22 @@ function showShake(id, btn) {
  })
  myShakeEvent.start();
 
-window.addEventListener('shake', shakeEventDidOccur, false);
 
 //function to call when shake occurs
 function shakeEventDidOccur () {
   document.getElementById("slide11").style.display ='none';
   document.getElementById("toss-gif").style.display = 'inline';
-  var audio = document.getElementById('audio-end');
-  audio.play
-
-  setTimeout(function(){
-  document.getElementById("toss-gif").style.display = 'none';},3000);
+  
+  setTimeout(function () {
+        document.getElementById('back-button').style.display='none';
+        document.getElementById('toss-gif').style.display='none';
+        document.getElementById('shake-icon').style.display='none';
+        
+        
+    }, 2900);
+    return false;
   }
-} 
+}
 
 
 function generate4d() {

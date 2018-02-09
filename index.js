@@ -41,7 +41,7 @@ function showNext(id, btn,audio) {
 
 function showPrevious() {
   document.getElementById("slide"+currentSlide).style.display = 'block';
-   var audio = document.getElementById("audio"+(currentSlide+1);
+  var audio = document.getElementById("audio"+(currentSlide));
     console.log(audio);
     audio.play();
 

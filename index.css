@@ -1,5 +1,5 @@
 body {
-  background-image: 'Final-BG.png';
+  background-image: url('Final-BG.png');
   background-repeat: no-repeat !important;
   background-size: 100%;
   font-family: 'Avenir', 'Helvetica', 'Arial','Sans-Serif';

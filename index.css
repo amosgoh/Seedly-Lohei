@@ -4,7 +4,7 @@
   background-size: 100%;
   font-family: 'Avenir', 'Helvetica', 'Arial','Sans-Serif';
   text-align: center;
-   -webkit-overflow-scrolling: touch;
+   /*-webkit-overflow-scrolling: touch;*/
     }
     
 #tap-text {

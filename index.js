@@ -60,7 +60,7 @@ function showShake(id, btn, audio) {
   window.addEventListener('shake', shakeEventDidOccur, false);
 
   var myShakeEvent = new Shake({
-    threshold: 8, // optional shake strength threshold
+    threshold: 10, // optional shake strength threshold
     timeout: 1000 // optional, determines the frequency of event generation
  })
  myShakeEvent.start();

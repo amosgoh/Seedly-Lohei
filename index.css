@@ -162,8 +162,8 @@
   display: block;
   width: 20% !important;
   height: auto;
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  margin-top: 70%;
   margin-left: 36%;
   margin-right: 40%;
   animation: shake 0.5s;

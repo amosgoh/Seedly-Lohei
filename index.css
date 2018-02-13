@@ -267,11 +267,11 @@
 }
 
 .sharethis-inline-share-buttons {
-  padding-top: 20px; !important
+  padding-top: 20px !important;
 }
 
 .st-total {
-  color: #f1c452;
+  color: #f1c452 !important;
 }
 
 .warningText {

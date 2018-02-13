@@ -53,7 +53,8 @@ var audio = document.getElementById("audio0");
  audio.volume = 0.2;
 
 function showShake(id, btn, audio) {
-  document.getElementById(id).style.display = 'none'
+  document.getElementById(id).style.display = 'none';
+  document.getElementById("shakeScreen").style .display = 'block';
   var audio = document.getElementById(audio);
   audio.play();
   
